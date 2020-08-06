@@ -1,6 +1,12 @@
 # Steam-Achievements-Scanner
 A scanner that will let you narrow down your achievements by letting you search through them using a number of tools (including regex) written in Python 3
 
+If you're using the python version then the requirements are
+**Requirements:**
+1. requests>=2.24.0
+
+The executable version does not require anything other than the binary itself however I did find it to be very slow.
+
 <pre>
     Usage:
         -  steam_achievement_scanner.py <url_to_profile_achievements> <include_term> [start_html_file]
@@ -34,7 +40,7 @@ C:\Users\Hamolicious\Documents\Programing_Projects\Python\WIP\Steam Achievements
 Running this command...
 <img src="https://github.com/hamolicious/Steam-Achievements-Scanner/blob/master/Screenshots/command.PNG?raw=true">
 
-...will generate an "index.html" file that upon opening (in this case automatically since the start_html_file has been set to true) will dipsplay a sorted list (from closest to getting to farthest) of achievements that contain the word "expert"
+...will generate an "index.html" file that upon opening (in this case automatically since the start_html_file tag has been set to true) will dipsplay a sorted list (from closest to getting to farthest) of achievements that contain the word "expert"
 <img src="https://github.com/hamolicious/Steam-Achievements-Scanner/blob/master/Screenshots/index.PNG?raw=true">
 
 
